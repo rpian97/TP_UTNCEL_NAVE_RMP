@@ -8,14 +8,16 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Science+Gothic:wght@100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Science+Gothic:wght@100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 
 <body>
     <div class="page">
         <header>
-            <div class="header-content">
+            <nav class="header-content">
                 <button class="nav-mobile-button-menu">
                     <i class="bi bi-list"></i>
                 </button>
@@ -28,19 +30,19 @@
                     <img src="./images/01-logo-mobile.jpeg" alt="Logo Mobile">
                 </a>
 
-                <nav class="nav-desktop">
-                    <span class="nav-link">Medios de cobro</span>
-                    <span class="nav-link">Mas soluciones</span>
-                    <span class="nav-link">Beneficios</span>
-                </nav>
+                <ul class="nav-desktop">
+                    <li><span class="nav-link">Medios de cobro</span></li>
+                    <li><span class="nav-link">Mas soluciones</span></li>
+                    <li><span class="nav-link">Beneficios</span></li>
+                </ul>
 
-                <span class="header-divider"> </span>
+                <span class="header-divider"></span>
 
                 <a href="" class="nav-desktop-button-01">Espacio Nave</a>
 
                 <a href="" class="nav-desktop-button-02">Entrar a Nave</a>
 
-            </div>
+            </nav>
         </header>
 
 
@@ -88,9 +90,10 @@
                 <div class="boxdesign-02"><!-- Cuadro violeta -->
                     <div class="boxdesign-03">
                         <h2 class="boxtitle-02">Historias que vuelan</h2>
-                        <p class="boxpgph-02">Conocé a los comercios que eligen Nave todos los días <i class="bi bi-heart-fill"></i></p>
+                        <p class="boxpgph-02">Conocé a los comercios que eligen Nave todos los días <i
+                                class="bi bi-heart-fill"></i></p>
                     </div>
-                    <button class="boxbutton-02"><a href="">Conocer más</a></button>
+                    <button class="boxbutton-02"><a href="" class="anc-boxbutton-02">Conocer más</a></button>
                 </div>
             </section>
 
@@ -102,7 +105,9 @@
                     <p class="section-main-02-pgph">Elegí las opciones que mejor se ajustan a tu negocio.</p>
                 </div>
                 <div class="boxdesign-04"><!-- Seccion QR -->
+                    <div class="boxdesign-img">
                         <img src="./images/02-img-qr.png" alt="QR image" class="section-main-02-image">
+                    </div>
                     <div class="boxdesign-05">
                         <h2 class="boxtitle-03">QR</h2>
                         <p class="boxpgph-03">Ideal para cobrar en tu local o desde donde prefieras sin manejar
@@ -113,7 +118,9 @@
                 </div>
                 <div class="section-separator-01"></div>
                 <div class="boxdesign-06"><!-- Seccion Terminal -->
-                    <img src="./images/03-img-terminal.png" alt="Terminal image" class="section-main-02-image">
+                    <div class="boxdesign-img">
+                        <img src="./images/03-img-terminal.png" alt="Terminal image" class="section-main-02-image">
+                    </div>
                     <div class="boxdesign-05">
                         <h2 class="boxtitle-03">Terminal Nave Point</h2>
                         <p class="boxpgph-03">Aceptá pagos con tarjetas de débito y crédito en tu local de forma rápida
@@ -124,7 +131,9 @@
                 </div>
                 <div class="section-separator-01"></div>
                 <div class="boxdesign-04"><!-- Seccion Link de pago -->
-                    <img src="./images/04-img-chat.png" alt="Chat image" class="section-main-02-image">
+                    <div class="boxdesign-img">
+                        <img src="./images/04-img-chat.png" alt="Chat image" class="section-main-02-image">
+                    </div>
                     <div class="boxdesign-05">
                         <h2 class="boxtitle-03">Link de pago</h2>
                         <p class="boxpgph-03">La forma más fácil de vender por chat y redes sociales. Compartí el link y
@@ -134,7 +143,9 @@
                 </div>
                 <div class="section-separator-01"></div>
                 <div class="boxdesign-06"><!-- Seccion Tienda online -->
-                    <img src="./images/05-im-tiendaonline.png" alt="Tienda image" class="section-main-02-image">
+                    <div class="boxdesign-img">
+                        <img src="./images/05-im-tiendaonline.png" alt="Tienda image" class="section-main-02-image">
+                    </div>
                     <div class="boxdesign-05">
                         <h2 class="boxtitle-03">Tienda online</h2>
                         <p class="boxpgph-03">Ofrecé una experiencia de pago sin fricciones aceptando pagos con todos
@@ -150,85 +161,83 @@
         </main>
 
         <footer>
-            <div class="footer-div-01">
-                <div class="footer-div-02">
+            <div class="footer-grid-01">
+                <div class="footer-grid-div-00">
                     <img src="./images/01-logo-mobile.jpeg" alt="" class="footer-image">
                 </div>
-                <div class="footer-div-03">
-                    <div class="footer-div-04">
-                        <ul>
-                            <li>
-                                <h2 class="footer-title-01">Nave</h2>
-                            </li>
-                            <li>
-                                <a href="" class="footer-list-item-01">Cobrá con Nave</a>
-                            </li>
-                            <li>
-                                <a href="" class="footer-list-item-01">Entrar a Nave</a>
-                            </li>
-                            <li>
-                                <a href="" class="footer-list-item-01">El blog de Nave</a>
-                            </li>
-                            <li>
-                                <a href="" class="footer-list-item-01">Empezar a cobrar</a>
-                            </li>
-                            <li>
-                                <a href="" class="footer-list-item-01">Abrir cuenta en Galicia</a>
-                            </li>
-                            <li>
-                                <a href="" class="footer-list-item-01">Cobranzas integradas</a>
-                            </li>
-                            <li>
-                                <a href="" class="footer-list-item-01">Nave Developers</a>
-                            </li>
-                            <li>
-                                <a href="" class="footer-list-item-01">Integraciones</a>
-                            </li>
+                <div class="footer-grid-div-01">
+                    <ul>
+                        <li>
+                            <h2 class="footer-title-01">Nave</h2>
+                        </li>
+                        <li>
+                            <a href="" class="footer-list-item-01">Cobrá con Nave</a>
+                        </li>
+                        <li>
+                            <a href="" class="footer-list-item-01">Entrar a Nave</a>
+                        </li>
+                        <li>
+                            <a href="" class="footer-list-item-01">El blog de Nave</a>
+                        </li>
+                        <li>
+                            <a href="" class="footer-list-item-01">Empezar a cobrar</a>
+                        </li>
+                        <li>
+                            <a href="" class="footer-list-item-01">Abrir cuenta en Galicia</a>
+                        </li>
+                        <li>
+                            <a href="" class="footer-list-item-01">Cobranzas integradas</a>
+                        </li>
+                        <li>
+                            <a href="" class="footer-list-item-01">Nave Developers</a>
+                        </li>
+                        <li>
+                            <a href="" class="footer-list-item-01">Integraciones</a>
+                        </li>
 
-                        </ul>
-                    </div>
-                    <div class="footer-div-04">
-                        <ul>
-                            <li>
-                                <h2 class="footer-title-01">Medios de cobro</h2>
-                            </li>
-                            <li>
-                                <a href="" class="footer-list-item-01">Cobrá con QR</a>
-                            </li>
-                            <li>
-                                <a href="" class="footer-list-item-01">Cobrá por tu tienda online</a>
-                            </li>
-                            <li>
-                                <a href="" class="footer-list-item-01">Cobrá con Link de pago</a>
-                            </li>
-                            <li>
-                                <a href="" class="footer-list-item-01">Cobrá con Nave point</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-div-04">
-                        <ul>
-                            <li>
-                                <h2 class="footer-title-01">Beneficios</h2>
-                            </li>
-                            <li>
-                                <a href="" class="footer-list-item-01">Promociones</a>
-                            </li>
-                            <li>
-                                <a href="" class="footer-list-item-01">Mapa de Nave</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-div-04">
-                        <ul>
-                            <li>
-                                <h2 class="footer-title-01">Te puede interesar</h2>
-                            </li>
-                            <li>
-                                <a href="" class="footer-list-item-01">Galicia</a>
-                            </li>
-                        </ul>
-                    </div>
+                    </ul>
+                </div>
+                <div class="footer-grid-div-02">
+                    <ul class="footer-list-01">
+                                <li>
+                                    <h2 class="footer-title-01">Medios de cobro</h2>
+                                </li>
+                                <li>
+                                    <a href="" class="footer-list-item-01">Cobrá con QR</a>
+                                </li>
+                                <li>
+                                    <a href="" class="footer-list-item-01">Cobrá por tu tienda online</a>
+                                </li>
+                                <li>
+                                    <a href="" class="footer-list-item-01">Cobrá con Link de pago</a>
+                                </li>
+                                <li>
+                                    <a href="" class="footer-list-item-01">Cobrá con Nave point</a>
+                                </li>
+                            </ul>
+                </div>
+                <div class="footer-grid-div-03">
+                    <ul>
+                                <li>
+                                    <h2 class="footer-title-01">Beneficios</h2>
+                                </li>
+                                <li>
+                                    <a href="" class="footer-list-item-01">Promociones</a>
+                                </li>
+                                <li>
+                                    <a href="" class="footer-list-item-01">Mapa de Nave</a>
+                                </li>
+                            </ul>
+                </div>
+                <div class="footer-grid-div-04">
+                    <ul>
+                                <li>
+                                    <h2 class="footer-title-01">Te puede interesar</h2>
+                                </li>
+                                <li>
+                                    <a href="" class="footer-list-item-01">Galicia</a>
+                                </li>
+                            </ul>
                 </div>
             </div>
         </footer>
