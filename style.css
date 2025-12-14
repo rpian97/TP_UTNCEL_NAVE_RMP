@@ -1,214 +1,345 @@
 /* Estilos universales */
-        *{
-            font-family: Arial, Helvetica, sans-serif;
-            text-decoration: none;
-        }
-        ul {
-            list-style: none;
-        }
+* {
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
 
 /* Encabezado */
-        header{
-            background-color: white;
-            width: 100%;
-            height: 83px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+header {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 82px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px gray solid;
+}
 
-        .header-content{
-            display: flex;
-            max-width: 1022px;
-            align-items: center;
-            justify-content: center;
-            gap: 30px;
+.header-content {
+    display: flex;
+    max-width: 1022px;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
 
-        }
+}
 
-        .nav-mobile-button-menu{
-            display: none;
-        }
+.nav-mobile-button-menu {
+    display: none;
+}
 
-        .a-logo-01{
-            display: flex;
-            width: 140px;
-            height: 37px;
-        }
+.a-logo-01 {
+    display: flex;
+    width: 140px;
+    height: 37px;
+}
 
-        .a-logo-02{
-            display: none;
-        }
+.a-logo-02 {
+    display: none;
+}
 
-        .nav-desktop{
-            max-width: 460px;
-            max-height: 41px;
-            display: flex;
-            align-items: center;
-            border-right: gray 1px solid;
+.nav-desktop {
+    max-width: 460px;
+    max-height: 41px;
+    display: flex;
+    align-items: center;
+    border-right: gray 1px solid;
 
-        }
-        .nav-list{
-            display: flex;
-        }
-        .nav-link{
-            max-width: 160px;
-            max-height: 41px;
-            padding: 6px 24px;
-            font-size: 14px;
-            font-weight: bold;
-        }
+}
 
-        .header-divider{
-            border-right: 1px gray solid;
-        }
+.nav-list {
+    display: flex;
+}
 
-        .nav-desktop-button-01{
-            display: flex;
-            max-width: 168px;
-            max-height: 41px;
-            padding: 10px 20px;
-            border: 1px blueviolet solid;
-            border-radius: 40px;
-            background-color: white;
-            font-size: 14px;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
+.nav-link {
+    max-width: 160px;
+    max-height: 41px;
+    padding: 6px 24px;
+    font-size: 14px;
+    font-weight: bold;
+}
 
-        }
+.header-divider {
+    border-right: 1px gray solid;
+}
 
-        .nav-desktop-button-02{
-            display: flex;
-            max-width: 168px;
-            max-height: 41px;
-            padding: 10px 20px;
-            border: 1px #370d73 solid;
-            border-radius: 40px;
-            background-color: blueviolet;
-            color: white;
-            font-size: 14px;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-        }
+.nav-desktop-button-01 {
+    display: flex;
+    max-width: 168px;
+    max-height: 41px;
+    padding: 10px 30px;
+    border: 1px #652bdf solid;
+    border-radius: 40px;
+    background-color: white;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+
+}
+
+.nav-desktop-button-02 {
+    display: flex;
+    max-width: 168px;
+    max-height: 40px;
+    padding: 10px 30px;
+    border: 1px #370d73 solid;
+    border-radius: 40px;
+    background-color: #652bdf;
+    color: white;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
 
 /* Estilos del body */
-        body {
-        min-height: 100vh;
-        margin: 0;
+body {
+    min-height: 100vh;
+    margin: 0;
 
-        display: flex;
-        justify-content: center; /* horizontal */
-        align-items: center;     /* vertical */
+    display: flex;
+    justify-content: center;
+    /* horizontal */
+    align-items: center;
+    /* vertical */
 
-        background-color: rgb(251, 251, 255);
-        }
-        .main-separator-01{
-            width: 1022px;
-            height: 64px;
-        }
-        .section-main-01{
-            background-color: rgb(251, 251, 255);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            max-width: 1022px;
-        }
+    background-color: rgb(251, 251, 255);
 
-        h1{
-            display: flex;
-            width: 1022px;
-            height: 42px;
-            align-items: center;
-            justify-content: center;
-            margin: 8px;
-            font-size: 40px;
-        }
+    padding-top: 82px;
+}
 
-        .section-separator-01{
-            width: 1022px;
-            height: 32px;
-        }
-        .boxmain-01{
-            display: flex;
-            justify-content: space-between;
-            gap: 5px;
-        }
-        .boxdesign-01{
-            width: 285px;
-            height: 260px;
-            padding: 20px;
-            border: white solid;
-            border-radius: 10px;
-            background-color: white;
-            
-        }
-        .boxdiv-icono-01{
-            width: 60px;
-            height: 60px;
-            display: flex;
-            justify-content: left;
-        }
+.main-separator-01 {
+    width: 1022px;
+    height: 64px;
+}
 
-        .boxtitle-01{
-            font-size: 24px;
-        }
-        .boxpgph-01{
-            font-size: 18px;
-            color: darkgray;
-        }
+.section-main-01 {
+    background-color: rgb(251, 251, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1022px;
+}
 
+h1 {
+    display: flex;
+    width: 1022px;
+    height: 42px;
+    align-items: center;
+    justify-content: center;
+    margin: 8px;
+    font-size: 40px;
+}
 
+.section-separator-01 {
+    width: 1022px;
+    height: 32px;
+}
 
-        .boxdesign-02{
-            display: flex;
-            max-width: 1022px;
-            min-width: 925px;
-            max-height: 80px;
-            padding: 32px 40px;
-            background-color: #370d73;
-            border: #370d73 1px solid;
-            border-radius: 40px;
-            align-items: center;
-            justify-content: space-between;
-            
-        }
-        .boxdesign-03{
-            color: white;
-            width: 670px;
-        }
+.boxmain-01 {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
 
-        .boxtitle-02{
-            font-size: 30px;
-        }
+.boxdesign-01 {
+    width: 285px;
+    height: 260px;
+    padding: 20px;
+    border: white solid;
+    border-radius: 10px;
+    background-color: white;
 
-        .boxpgph-02{
-            font-size: 18px;
-        }
-        .boxbutton-02{
-            display: flex;
-            width: 168px;
-            height: 41px;
-            padding: 10px;
-            border: 1px white solid;
-            border-radius: 40px;
-            background-color: white;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            font-size: 16px;
-            color: #652bdf;
-        }
-        .bi-heart-fill{
-            color: #6d44c4;
+}
 
-        }
+.boxdiv-icono-01 {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #652bdf;
+    font-size: 25px;
+    background-color: #f0eafc;
+    border-radius: 5px;
+}
+
+.boxtitle-01 {
+    font-size: 24px;
+}
+
+.boxpgph-01 {
+    font-size: 18px;
+    color: darkgray;
+}
 
 
 
+.boxdesign-02 {
+    display: flex;
+    max-width: 1022px;
+    min-width: 925px;
+    max-height: 80px;
+    padding: 32px 40px;
+    background-color: #360c72;
+    border: #360c72 1px solid;
+    border-radius: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.boxdesign-03 {
+    color: white;
+    width: 670px;
+}
+
+.boxtitle-02 {
+    font-size: 30px;
+}
+
+.boxpgph-02 {
+    font-size: 18px;
+}
+
+.boxbutton-02 {
+    display: flex;
+    width: 168px;
+    height: 41px;
+    padding: 10px;
+    border: 1px white solid;
+    border-radius: 40px;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 16px;
+    color: #652bdf;
+}
+
+.bi-heart-fill {
+    color: #6d44c4;
+
+}
 
 
 
-        /* Section 2 - Encontrá tu medio de pago ideal */
+
+
+
+/* Section 2 - Encontrá tu medio de pago ideal */
+.section-main-02 {
+    background-color: rgb(251, 251, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1022px;
+}
+
+.section-main-02-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.boxdesign-04 {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: white;
+    max-width: 1022px;
+    max-height: 350px;
+    gap: 15px;
+    align-items: center;
+}
+
+.boxdesign-06 {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    max-width: 1022px;
+    max-height: 350px;
+    gap: 15px;
+    align-items: center;
+}
+
+.boxdesign-05 {
+    display: flex;
+    flex-direction: column;
+    width: 460px;
+    height: 190px;
+    padding: 25px 0px;
+    background-color: white;
+    justify-content: space-between;
+}
+
+.section-main-02-image {
+    width: 510px;
+}
+
+.boxtitle-03 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.boxpgph-03 {
+    font-size: 18px;
+}
+
+.boxbutton-03 {
+    display: flex;
+    width: 140px;
+    height: 41px;
+    padding: 10px 0px;
+    border-radius: 40px;
+    background-color: #652bdf;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+}
+
+
+
+/* Foot */
+
+.footer-div-01 {
+    display: flex;
+    max-width: 1022px;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-div-02 {
+    display: flex;
+    justify-content: left;
+}
+
+.footer-image {
+    width: 20px;
+}
+
+.footer-div-03 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1022px;
+}
+
+.footer-div-04 {
+    display: flex;
+}
