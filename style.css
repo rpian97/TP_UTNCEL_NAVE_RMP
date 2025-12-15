@@ -1,8 +1,9 @@
-/* 
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Science+Gothic:wght@100..900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 
-Estilos universales 
 
-*/
+/* Estilos universales */
 * {
     font-family: "Inter", Arial, Helvetica, sans-serif;
     text-decoration: none;
@@ -15,17 +16,22 @@ ol {
     margin: 0;
 }
 
+/* Colores */
+:root{
+    --page-color-600-banner: #360c72;  /* Banner Historias que vuelan */
+    --page-color-500-btns: #652bdf;  /* Boton 1 y 2 nav; Botones main seccion 2 */
+    --page-color-400-icons: #7243e0;  /* Font icons */
+    --page-color-300-heartbanner: #9a2bf8;  /* Heart banner */
+    --page-color-200-btnhover: #e4d7ff;  /* Hover color botones nav */
+    --page-color-100-bckicons: #f0eafc;  /* Background icons */
+    --page-color-000-bckpage: #fcfbff;   /* Fondo de pagina */
+}
 
 
 
 
 
-
-/* 
-
-SECCION DEL HEADER 
-
-*/
+/* SECCION DEL HEADER */
 header {
     background-color: white;
     position: fixed;
@@ -87,7 +93,7 @@ header {
 }
 
 .nav-link:hover {
-    background-color: #e4d7ff;
+    background-color: var(--page-color-200-btnhover);
 }
 
 .header-divider {
@@ -101,19 +107,19 @@ header {
     height: 21px;
     margin: 0px 0px;
     padding: 9px 24px;
-    border: 1px #652bdf solid;
+    border: 1px var(--page-color-500-btns) solid;
     border-radius: 40px;
     background-color: white;
     font-size: 14px;
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    color: #360c72;
+    color: var(--page-color-500-btns);
     transition: background-color 0.5s ease;
 }
 
 .nav-desktop-button-01:hover {
-    background-color: #e4d7ff;
+    background-color: var(--page-color-200-btnhover);
 }
 
 .nav-desktop-button-02 {
@@ -122,9 +128,9 @@ header {
     height: 21px;
     margin: 0px;
     padding: 9px 24px;
-    border: 1px #370d73 solid;
+    border: 1px var(--page-color-500-btns) solid;
     border-radius: 40px;
-    background-color: #652bdf;
+    background-color: var(--page-color-500-btns);
     color: white;
     font-size: 14px;
     align-items: center;
@@ -135,7 +141,7 @@ header {
 }
 
 .nav-desktop-button-02:hover {
-    background-color: #e4d7ff;
+    background-color: var(--page-color-200-btnhover);
     color: #360c72;
 }
 
@@ -146,11 +152,7 @@ header {
 
 
 
-/* 
-
-Estilos del body 
-
-*/
+/* Estilos del body */
 body {
     min-height: 100vh;
     margin: 0;
@@ -161,7 +163,7 @@ body {
     align-items: center;
     /* vertical */
 
-    background-color: rgb(251, 251, 255);
+    background-color: var(--page-color-000-bckpage);
 
     padding-top: 82px;
 }
@@ -172,14 +174,9 @@ body {
 }
 
 
-/* 
-SECCCION 01
-
-Te damos la bienvenida al vuelo de tu negocio
-
- */
+/* SECCCION 01 - Te damos la bienvenida al vuelo de tu negocio */
 .section-main-01 {
-    background-color: rgb(251, 251, 255);
+    background-color: var(--page-color-000-bckpage);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -230,9 +227,9 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #652bdf;
+    color: var(--page-color-400-icons);
     font-size: 25px;
-    background-color: #f0eafc;
+    background-color: var(--page-color-100-bckicons);
     border-radius: 5px;
 }
 
@@ -253,7 +250,7 @@ h1 {
     min-width: 925px;
     max-height: 80px;
     padding: 32px 40px;
-    background-color: #360c72;
+    background-color: var(--page-color-600-banner);
     border-radius: 40px;
     align-items: center;
     justify-content: space-between;
@@ -288,7 +285,7 @@ h1 {
 }
 
 .boxbutton-02 a {
-    color: #652bdf;
+    color: var(--page-color-500-btns);
 }
 
 .boxbutton-02:hover {
@@ -296,11 +293,11 @@ h1 {
 }
 
 .boxbutton-02:hover a {
-    color: #e4d7ff;
+    color: var(--page-color-200-btnhover);
 }
 
 .bi-heart-fill {
-    color: #6d44c4;
+    color: var(--page-color-300-heartbanner);
     font-size: 20px;
 
 }
@@ -312,15 +309,9 @@ h1 {
 
 
 
-/* 
-
-Section 2
-
-Encontrá tu medio de pago ideal 
-
-*/
+/* Section 2 - Encontrá tu medio de pago ideal */
 .section-main-02 {
-    background-color: rgb(251, 251, 255);
+    background-color: var(--page-color-000-bckpage);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -401,7 +392,7 @@ Encontrá tu medio de pago ideal
     height: 45px;
     padding: 0px;
     border-radius: 40px;
-    background-color: #652bdf;
+    background-color: var(--page-color-500-btns);
     align-items: center;
     justify-content: center;
     font-weight: bold;
@@ -411,26 +402,26 @@ Encontrá tu medio de pago ideal
 }
 
 .boxbutton-03:hover {
-    background-color: #360c72;
+    background-color: var(--page-color-600-banner);
 }
 
 
 
-/* 
-
-Footer
-
-*/
+/* Footer */
 
 .footer-grid-01{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
+    width: 1022px;
+    height: 373px;
+    grid-template-rows: 44px auto;
 }
 
 .footer-grid-div-00{
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+    height: 60px;
 }
 .footer-grid-div-01{
     grid-column: 1 / 2;
@@ -447,4 +438,18 @@ Footer
 .footer-grid-div-04{
     grid-column: 4 / 5;
     grid-row: 2 / 3;
+}
+
+.footer-title-01{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer-list-item-01{
+    font-size: 14px;
+    color: black;
+}
+.footer-list-item-01:hover{
+    color: blueviolet;
+    text-decoration: underline;
 }
