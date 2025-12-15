@@ -1,0 +1,26 @@
+Medidas y cambios en responsive
+
+1022px al 992px
+El nav se empieza a cerrar y se acorta espacio entre los dos botones de la derecha y el borde gris
+Despues del 990px aparece el logo de la pagina sin txt en el medio y un icono de list a la izquierda
+
+1062px al 769px
+Seccion 1 del main
+el banner violeta se empieza a achicar (debe tener un maxwidth de 1062px, tener en cuenta que hay un margen de 24px lateral)
+las 3 cajas (la que llevan iconos) se empiezan a achicar en ancho, pero se mantiene distancia (analizar uso de GAP)
+Despues del 769px las 3 cajas de disponen verticalmente (columna) con un pequeño gap (5px aprox)
+La justifiacion de los items dentro de estas cajas sigue siendo LEFT
+El boton del banner violeta pasa a estar debajo del texto
+
+Seccion 2 del main
+Acá las imagenes y los div del texto con botones se van achicando (posiblemente un maxwidth igual en los dos que creo que era de 510px)
+Despues de los 769px cada div que contiene los div de imagen y texto, pasan a ser verticales (column), y en los 4 casos queda la imagen arriba
+La imagen se va adaptando al ancho, por lo tanto seguimos con el % al div
+
+Footer
+Este pasa a tener 2 columnas
+el icono que estaba en la primer fila pasa a estar en el medio
+El orden de los divs anteriores pasa a ser
+   00
+01 | 02
+03 | 04
