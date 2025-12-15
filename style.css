@@ -52,6 +52,7 @@ header {
     padding: 16px;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 
 /* Boton de lista */
@@ -66,6 +67,7 @@ header {
     align-items: center;
     justify-content: center;
 }
+
 .bi-list{
     font-size: 28px;
     font-weight: bolder;
@@ -75,11 +77,16 @@ header {
     display: flex;
     width: 140px;
     height: 37px;
+    outline: none;
 }
 
 .a-logo-02 {
     display: none;
     justify-self: center;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    outline: none;
 }
 
 .nav-desktop {
@@ -114,6 +121,12 @@ header {
     width: 1px;
     height: 24px;
     background-color: lightgray;
+}
+
+@media (max-width: 992px){
+    .header-divider{
+        display: none;
+    }
 }
 
 .nav-btn-list{
@@ -203,8 +216,6 @@ header {
 
 
 
-
-
 /* Estilos del body */
 body {
     min-height: 100vh;
@@ -223,8 +234,9 @@ body {
     justify-content: center;
     width: 100%;
     max-width: 1022px;
-    margin: auto;
+    margin: 0 auto;
     padding: 0px 24px;
+    box-sizing: border-box;
 }
 
 
@@ -276,7 +288,6 @@ h1 {
     width: 100%;
     max-width: 1022px;
 }
-
 @media (max-width: 769px) {
     .boxmain-01 {
         flex-direction: column;
@@ -295,7 +306,6 @@ h1 {
     transition: padding 0.25s ease;
 
 }
-
 @media (max-width: 769px) {
     .boxdesign-01 {
         max-width: 769px;
@@ -342,7 +352,6 @@ h1 {
     align-items: center;
     justify-content: space-between;
 }
-
 @media (max-width: 769px) {
     .boxdesign-02 {
         flex-direction: column;
@@ -442,7 +451,6 @@ h1 {
     justify-content: space-between;
     align-items: center;
 }
-
 @media (max-width: 769px) {
     .boxdesign-04 {
         flex-direction: column;
@@ -479,7 +487,6 @@ h1 {
     gap: 15px;
     justify-content: center;
 }
-
 @media (max-width: 769px) {
     .boxdesign-05 {
         height: auto;
@@ -496,7 +503,6 @@ h1 {
     max-width: 510px;
     height: 350px;
 }
-
 @media (max-width: 769px) {
     .boxdesign-img {
         height: auto;
@@ -518,7 +524,6 @@ h1 {
     font-size: 30px;
     font-weight: bold;
 }
-
 @media (max-width: 769px) {
     .boxtitle-03 {
         margin: 0px;
@@ -528,7 +533,6 @@ h1 {
 .boxpgph-03 {
     font-size: 18px;
 }
-
 @media (max-width: 769px) {
     .boxpgph-03 {
         margin: 0px;
@@ -549,7 +553,6 @@ h1 {
     color: white;
     transition: background-color 0.75s ease;
 }
-
 @media (max-width: 769px) {
     .boxbutton-03 {
         align-self: center;
@@ -591,12 +594,12 @@ h1 {
         margin-bottom: 30px;
     }
 }
+
 .footer-grid-div-00 {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     height: 60px;
 }
-
 @media (max-width: 769px) {
     .footer-grid-div-00 {
         grid-column: 1 / -1;
@@ -610,7 +613,6 @@ h1 {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
 }
-
 @media (max-width: 769px) {
     .footer-grid-div-01 {
         grid-column: 1 / 2;
@@ -623,7 +625,6 @@ h1 {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
 }
-
 @media (max-width: 769px) {
     .footer-grid-div-02 {
         grid-column: 2 / 3;
@@ -636,7 +637,6 @@ h1 {
     grid-column: 3 / 4;
     grid-row: 2 / 3;
 }
-
 @media (max-width: 769px) {
     .footer-grid-div-03 {
         grid-column: 1 / 2;
@@ -649,7 +649,6 @@ h1 {
     grid-column: 4 / 5;
     grid-row: 2 / 3;
 }
-
 @media (max-width: 769px) {
     .footer-grid-div-04 {
         grid-column: 2 / 3;
