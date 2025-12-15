@@ -24,3 +24,6 @@ El orden de los divs anteriores pasa a ser
    00
 01 | 02
 03 | 04
+
+
+Terminamos wey

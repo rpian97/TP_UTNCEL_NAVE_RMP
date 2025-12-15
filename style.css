@@ -580,7 +580,7 @@ h1 {
 .footer-grid-01 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 15px;
     width: 100%;
     max-width: 1022px;
     height: 373px;
